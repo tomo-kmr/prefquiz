@@ -1,0 +1,62 @@
+.lists{
+  width: 100%;
+  text-align: left;
+  display :flex;
+  justify-content: center;
+}
+.japan {
+  height: 330px;
+  width: 330px;
+  border: 1px solid black;
+}
+.lists1{
+  margin-right: 10px;
+  width:40px;
+  text-align: left;
+}
+.lists2{
+  width:300px;
+}
+.list1, .list2 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.list1 {
+  border: 1px solid white;
+}
+
+.list2{
+  width: 275px;
+  border: 1px solid gray;
+  padding-left: 15px;
+  margin-right: 10px;
+}
+.list3{
+  display:none;
+  font-size: 20px;
+  margin-left: 60px;
+  color: red;
+}
+
+.note{
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.answer{
+  height: 50px;
+  padding-top: 20px;
+}
+
+#answer {
+  font-size: 30px;
+  color: red;
+  display:none;
+}
+.next {
+  height: 20px;
+  margin: 30px 0 50px 0;
+}
+.next p{
+  font-size: 25px;
+}

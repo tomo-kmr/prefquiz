@@ -1,0 +1,44 @@
+<div class='main' >
+  <div class='left' >
+  </div>
+  <div class='center' >
+    <p class='title' id='title' >都道府県当てゲーム</p>
+    <img src="/assets/_<%=@prefs[0][:id]%>_.png" alt="サンプル画像です" class='japan' id='japan'>
+    <div class="lists">
+      <ul class="lists1">
+        <li class="list1" >①</li>
+        <li class="list1" >②</li>
+        <li class="list1" >③</li>
+        <li class="list1" >④</li>
+      </ul>
+      <ul class="lists2">
+        <% 4.times do |i| %>
+          <% if @prefs[0][:answer_no] == i %>
+            <li class="list2" id="list<%=i%>"><%=@prefs[0][:pref_name]%><span class="list3">正解です</span></li>
+          <% else %>
+            <li class="list2" id="list<%=i%>"><%=(@prefs_all.where('id != ?', @prefs[0][:id]))[i][:pref_name]%><span class="list3">不正解です</span></li>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+    <p class = 'note'>
+      都道府県名をクリックすると正解/不正解が表示されます
+    </p>
+    <div class="answer">
+      <p id = 'answer'>
+        正解は<%=@prefs[0][:pref_name]%>です
+      </p>
+    </div>
+    <div class='next' >
+      <button type="button" >
+        <p id = "next-btn" >次の問題</p>
+      </button>
+    </div>
+    <div class='back-top' >
+     <%= link_to "難易度選択に戻る", root_path%>
+    </div>
+  </div>
+  
+  <div class='right' >
+  </div>
+</div>

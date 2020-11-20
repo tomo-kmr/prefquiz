@@ -1,0 +1,21 @@
+<div class='main' >
+  <div class='left' >
+  </div>
+  <div class='center' >
+    <p class='title'>都道府県当てゲーム</p>
+    <img src="/assets/_0_.png" alt="サンプル画像です" class='japan'>
+    <p>難易度を選んでね</p>
+    <p>(東西は気象庁の区分に準じています)</p>
+    <%= form_with url: "/prefs/1" , method: :get, local: true do |f| %>
+      <label><%= f.radio_button :difficulty, 0 %>全国</label>
+      <label><%= f.radio_button :difficulty, 1 %>東日本</label>
+      <label><%= f.radio_button :difficulty, 2 %>西日本</label>
+      <label><%= f.radio_button :difficulty, 3 %>激ムズ</label>
+      <%= f.submit "選択" ,class:"btn" %>
+    <% end %>
+  </div>
+  <div class='right' >
+  </div>
+  
+
+</div>

@@ -1,0 +1,32 @@
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.left {
+  height: 100%;
+  width: 30%;
+}
+.center {
+  height: 100%;
+  width: 60%;
+  text-align: center;
+}
+.center .title{
+  font-size: 35px;
+  font-weight: bold;
+}
+label {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.btn {
+  margin: auto;
+}
+
+.right {
+  height: 100%;
+  width: 30%;
+}
