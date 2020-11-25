@@ -3,7 +3,10 @@
   </div>
   <div class='center' >
     <p class='title' id='title' >都道府県当てゲーム</p>
-    <img src="/assets/_<%=@prefs[0][:id]%>_.png" alt="サンプル画像です" class='japan' id='japan'>
+    <div id="change-part">
+      <p class='number-problem' id='number-problem' >1問目</p>
+      <img src="/assets/_<%=@prefs[0][:id]%>_.png" alt="画像が表示されない場合は更新してみてください" class='japan' id='japan'>
+    </div>
     <div class="lists">
       <ul class="lists1">
         <li class="list1" >①</li>
@@ -14,11 +17,20 @@
       <ul class="lists2">
         <% 4.times do |i| %>
           <% if @prefs[0][:answer_no] == i %>
-            <li class="list2" id="list<%=i%>"><%=@prefs[0][:pref_name]%><span class="list3">正解です</span></li>
+            <li class="list2" id="list2_<%=i%>"><%=@prefs[0][:pref_name]%></li>
           <% else %>
-            <li class="list2" id="list<%=i%>"><%=(@prefs_all.where('id != ?', @prefs[0][:id]))[i][:pref_name]%><span class="list3">不正解です</span></li>
+            <li class="list2" id="list2_<%=i%>"><%=@prefs_all[i][:pref_name]%></li>
           <% end %>
         <% end %>
+      </ul>
+      <ul class="lists3">
+        <% 4.times do |i| %>
+          <% if @prefs[0][:answer_no] == i %>
+            <li class="list3" id="list3_<%=i%>">正解</li>
+          <% else %>
+            <li class="list3" id="list3_<%=i%>">不正解</li>
+          <% end %>
+      <% end %>
       </ul>
     </div>
     <p class = 'note'>

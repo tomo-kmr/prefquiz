@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2020_11_16_124822) do
     t.string "pref_name", null: false
     t.integer "sort_no"
     t.integer "answer_no"
+    t.integer "rotate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

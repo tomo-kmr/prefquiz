@@ -24,8 +24,30 @@ prefs = [
   {region_no: 1, pref_name: "静岡県"},
   {region_no: 1, pref_name: "愛知県"},
   {region_no: 1, pref_name: "三重県"},
-  {region_no: 1, pref_name: "岐阜県"}
-
+  {region_no: 1, pref_name: "岐阜県"},
+  {region_no: 2, pref_name: "大阪府"},
+  {region_no: 2, pref_name: "京都府"},
+  {region_no: 2, pref_name: "奈良県"},
+  {region_no: 2, pref_name: "兵庫県"},
+  {region_no: 2, pref_name: "滋賀県"},
+  {region_no: 2, pref_name: "和歌山県"},
+  {region_no: 2, pref_name: "鳥取県"},
+  {region_no: 2, pref_name: "岡山県"},
+  {region_no: 2, pref_name: "島根県"},
+  {region_no: 2, pref_name: "広島県"},
+  {region_no: 2, pref_name: "山口県"},
+  {region_no: 2, pref_name: "愛媛県"},
+  {region_no: 2, pref_name: "香川県"},
+  {region_no: 2, pref_name: "高知県"},
+  {region_no: 2, pref_name: "徳島県"},
+  {region_no: 2, pref_name: "福岡県"},
+  {region_no: 2, pref_name: "鹿児島県"},
+  {region_no: 2, pref_name: "熊本県"},
+  {region_no: 2, pref_name: "宮崎県"},
+  {region_no: 2, pref_name: "長崎県"},
+  {region_no: 2, pref_name: "大分県"},
+  {region_no: 2, pref_name: "佐賀県"},
+  {region_no: 2, pref_name: "沖縄県"}
 ]
 
 Pref.create(prefs)

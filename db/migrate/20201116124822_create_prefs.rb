@@ -5,6 +5,7 @@ class CreatePrefs < ActiveRecord::Migration[6.0]
       t.string :pref_name, null: false
       t.integer :sort_no
       t.integer :answer_no
+      t.integer :rotate
       t.timestamps
     end
   end

@@ -1,15 +1,13 @@
 class PrefsController < ApplicationController
-  # before_action :set_difficulty, only: [:show]
   def index
   end
 
   def show
     Pref.init
-    @prefs = Pref.set_pref(params[:difficulty])
-    @prefs_all = Pref.all.order("RAND()")
+    @prefs_temp = Pref.pref_set(params[:difficulty])
+    @prefs = @prefs_temp.where('sort_no <= 4')
+    @prefs_all = @prefs_temp.where('sort_no > 4')
+    gon.prefs = @prefs
+    gon.prefs_all = @prefs_all
   end
-
-  private
-
-  
 end
