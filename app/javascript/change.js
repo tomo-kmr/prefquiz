@@ -23,7 +23,7 @@ if (document.URL.match(/prefs/)){
         const HTML1 = `
         <div id="change-part">
           <p class='number-problem' id='number-problem' >${cnt+1}問目/全5問</p>
-          <img src="/assets/_${gon.prefs[cnt].id}_.png" alt="サンプル画像です" class='japan' id='japan'>
+          <img src="/assets/_${gon.prefs[cnt].pic_no}_.png" alt="サンプル画像です" class='japan' id='japan'>
         </div>
         `;
         title.insertAdjacentHTML("afterend", HTML1);

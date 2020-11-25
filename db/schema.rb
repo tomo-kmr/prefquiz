@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_11_16_124822) do
 
   create_table "prefs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "pic_no", null: false
     t.integer "region_no", null: false
     t.string "pref_name", null: false
     t.integer "sort_no"
