@@ -27,7 +27,6 @@ if (document.URL.match( /prefs/ )){
         </div>
         `;
         title.insertAdjacentHTML("afterend", HTML1);
-        // 画像を回転させる
       }else{
         const HTML1 = `
         <div id="change-part">
