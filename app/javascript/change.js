@@ -1,4 +1,4 @@
-if (document.URL.match(/prefs/)){
+if (document.URL.match( /prefs/ )){
   function change(){
     const next = document.getElementById("next-btn")
     const title = document.getElementById('title')
