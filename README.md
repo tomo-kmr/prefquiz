@@ -1,24 +1,20 @@
-# README
+## アプリケーション名
+Prefecture Q
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション概要
+JavaScriptを用いてランダムに5問、都道府県名を当てるクイズが出題されます
 
-Things you may want to cover:
+## URL
+https://prefectureq.herokuapp.com/
 
-* Ruby version
+## ご利用方法
+Topの難易度を選択すると、クイズが始まります
 
-* System dependencies
+## 作成理由
+JavaScriptの復習を兼ね、web上で気軽にできる同じものは見当たらなかったため作成しました
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 作成環境
+PC環境 & ソフト
+Mac OS Catalina 10.15.6
+ruby 2.6.5
+rails 6.0.0
